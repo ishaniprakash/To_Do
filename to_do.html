@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/switch_button.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script defer src="assets/todo.js"></script>
 </head>
 
 <body>
@@ -22,9 +23,10 @@
             </div>
             <div class="items">
                 <div class="item">
-                    <input placeholder="Add a task to the List..." type="text" />
-                    <i class="fab fa-plus"></i>
+                    <input id="add_item" placeholder="Add a task to the List..." type="text" />
+                    <i id="add_button" class="fab fa-plus"></i>
                 </div>
+                <ol></ol>
             </div>
         </div>
     </section>
