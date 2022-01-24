@@ -5,6 +5,7 @@
     font-family: Metropolis;
 }
 
+
 header {
     min-height: 325px;
     background-color: red;
@@ -13,6 +14,7 @@ header {
     background-size: cover;
     
 }
+
 
 footer {
     display: flex;
@@ -81,13 +83,23 @@ section.container div.todo div.items div.item {
 div.todo div.items div.item input {
     flex-basis: 90%;
     font-size: 20px;
+    padding: 3px;
     border: none;
     background-color: transparent;
 }
 
 div.todo div.items div.item i {
-    color: blueviolet;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
     font-size: larger;
     position: relative;
-    top: -3px;
+    left: 3px;
+    margin: 0px auto;
+}
+
+ol{
+    visibility: hidden;
+    padding: 3px;
+    margin: 5px 0px;
+    border-radius: 5px;
 }
