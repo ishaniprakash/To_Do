@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        div.image{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div.image img{
+            width:100%;
+            height:350px; 
+        }
+
+        div.image div.box{
+            position: absolute;
+            top:60%;
+            width: 400px;
+            /* border: 2px solid rgb(105, 255, 193); */
+        }
+
+        div.todo{
+            margin: 20px 0px;
+            display: flex;
+            font-size: 24px;
+            /* background-color: blueviolet; */
+        }
+
+        div.todo h2{
+            margin: 20px 0px;
+            display: flex;
+            align-items: center;
+            color: white;
+            flex-basis: 80%;
+        }
+        div.toggle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: white; */
+            flex-basis: 20%;
+        }
+        div.toggle img{
+            
+            position: relative;
+            width: 48px;
+            height: 48px;
+        }
+
+        div.add{
+            margin: 20px 0px;
+            display: flex;
+            height: 40px;
+            border-radius: 2px;
+            background-color: rgb(85, 77, 74);
+        }
+
+        div.add h3{
+            margin: 20px 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+            flex-basis: 85%;
+            font-size: 16px;
+        }
+        div.add button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            background-color: rgb(85, 77, 74);
+            color: white;
+            flex-basis: 15%;
+            position: relative;
+            
+            
+        }
+        footer {
+            position:absolute;
+            bottom: 0%;
+            width: 100%;
+            background-color: rgb(218, 211, 211);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section.social {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 10%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&h=650&w=940" alt="background-image">
+        <div class="box">
+            <div class="todo">
+                <h2>Todo List</h2>
+                <div class="toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="50" height="50"
+                    viewBox="0 0 172 172"
+                    style=" fill:#ffffff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M47.3,131.15c-24.897,0 -45.15,-20.253 -45.15,-45.15c0,-24.897 20.253,-45.15 45.15,-45.15h77.4c24.897,0 45.15,20.253 45.15,45.15c0,24.897 -20.253,45.15 -45.15,45.15z" fill="#ffffff"></path><path d="M124.7,43c23.7102,0 43,19.2898 43,43c0,23.7102 -19.2898,43 -43,43h-77.4c-23.7102,0 -43,-19.2898 -43,-43c0,-23.7102 19.2898,-43 43,-43h77.4M124.7,38.7h-77.4c-26.1225,0 -47.3,21.1775 -47.3,47.3v0c0,26.1225 21.1775,47.3 47.3,47.3h77.4c26.1225,0 47.3,-21.1775 47.3,-47.3v0c0,-26.1225 -21.1775,-47.3 -47.3,-47.3z" fill="#ffffff"></path><path d="M124.7,120.4v0c18.9974,0 34.4,-15.4026 34.4,-34.4v0c0,-18.9974 -15.4026,-34.4 -34.4,-34.4v0c-18.9974,0 -34.4,15.4026 -34.4,34.4v0c0,18.9974 15.4026,34.4 34.4,34.4z" fill="#fa5f55"></path></g></g></svg>
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/1827/1827834.png"/> -->
+                    <!-- <img src="https://img.icons8.com/ios-glyphs/30/ffffff/toggle-on--v1.png"/> -->
+                </div>
+            </div>
+            <div class="add">
+                <h3>Add a task to the list</h3>
+                <button>+</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div>
+            <h3>Ishani Prakash</h3>
+        </div>
+        <section class="social">
+            <img src="https://img.icons8.com/color/24/000000/instagram-new--v2.png" alt="Insta"/>
+            <img src="https://img.icons8.com/color/24/000000/linkedin.png"/>
+            <img src="https://img.icons8.com/small/24/000000/github.png"/>
+        </section>
+    </footer>
+</body>
+</html>
