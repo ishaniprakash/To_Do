@@ -3,13 +3,14 @@ const input = document.querySelector('input#add_item')
 const toggle = document.querySelector('input#switch-1')
 const list = document.querySelector('ol')
 const body = document.querySelector('body')
-// input.addEventListener('keydown', e => {
-//     const key = e.key
-//     // if (key === 'Enter') {
-//     //     // console.log("ENter key")
-//     //     handleAdd()
-//     // }
-// })
+
+
+input.addEventListener('keydown', e => {
+    const key = e.key
+    if (key === 'Enter') {
+        handleAdd()
+    }
+})
 
 
 
